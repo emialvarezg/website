@@ -23,11 +23,15 @@ details {
 
 .imghover{
   width: 500px;
-  background-image: url('lerw 3d sarai 4a.svg');
+  position = 'relative';
 }
 
-.imghover:hover {
-  width: 500px;
-  background-image: url('lerw 3d sarai 4a.svg');
+.imghover img {
+  width: 100%;
 }
 
+.lerwborrar1 {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
