@@ -21,10 +21,11 @@ details {
   text-align: justify;
 }
 
-.imghover {
-   background-image: url("prueba pag.JPG");
+.imghover{
+  background-image: url('lerw 3d sarai 4a.svg')
 }
 
 .imghover:hover {
-   background-image: url("lerw 3d sarai 4b.svg");
+  background-image: url('lerw 3d sarai 4a.svg')
 }
+
