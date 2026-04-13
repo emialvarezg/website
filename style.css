@@ -15,3 +15,8 @@ p {
   margin: 20px 100px;
   text-align: center;
 }
+
+details {
+  margin: 20px 100px;
+  text-align: justify;
+}
