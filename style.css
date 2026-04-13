@@ -24,15 +24,15 @@ details {
 .imghover{
   width: 500px;
   position = 'relative';
+  text-align: center;
 }
 
 
 
 .lerwborrar1 {
   position: absolute;
-  opacity:0;
+  opacity:1;
+  text-align: center;
 }
 
-.lerwborrar1:hover {
-  opacity:1;
-}
+
