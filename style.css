@@ -22,10 +22,12 @@ details {
 }
 
 .imghover{
-  background-image: url('lerw 3d sarai 4a.svg')
+  width: 500px;
+  background-image: url('lerw 3d sarai 4a.svg');
 }
 
 .imghover:hover {
-  background-image: url('lerw 3d sarai 4a.svg')
+  width: 500px;
+  background-image: url('lerw 3d sarai 4a.svg');
 }
 
