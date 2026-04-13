@@ -26,12 +26,13 @@ details {
   position = 'relative';
 }
 
-.imghover img {
-  width: 100%;
-}
+
 
 .lerwborrar1 {
   position: absolute;
-  left: 0;
-  top: 0;
+  opacity:0;
+}
+
+.lerwborrar1:hover {
+  opacity:1;
 }
