@@ -1,7 +1,3 @@
-.imghover {
-  backgroung-image: url('cd.gif');
-  margin-left: auto;
-  margin-right: auto;
-  width: 50px;
-  height: 50px;
+.container {
+  position: relative;
 }
