@@ -33,7 +33,7 @@ def prufer(A):
     return T
 
 @when("click", "#submit-btn")
-def generate(event):
+def generate_tree(event):
     n = document.getElementById('num').value
     S = [np.random.randint(1,n+1) for i in range(n-2)]
     G = prufer(S)
