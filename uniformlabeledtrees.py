@@ -6,14 +6,14 @@ import networkx as nx
 #import pydot
 #from networkx.drawing.nx_pydot import graphviz_layout
 
-display("prueba")
+#display("prueba")
 
-x=np.linspace(0,1,100)
-y=x**2
-fig, ax = plt.subplots()
-ax.plot(x,y)
+#x=np.linspace(0,1,100)
+#y=x**2
+#fig, ax = plt.subplots()
+#ax.plot(x,y)
 
-display(fig,target="graf")
+#display(fig,target="graf")
 
 def prufer(A):
     #definimos el árbol
@@ -45,7 +45,7 @@ G = prufer(S)
 
 fig2, ax2 = plt.subplots()
 pos = nx.spring_layout(G)
-nx.draw(G, pos)
+nx.draw(G, pos, node_color='cornflowerblue', node_size=120, with_labels=True, edge_color='cornflowerblue')
 display(fig2,target="graf2")
 
 
