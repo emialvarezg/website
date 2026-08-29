@@ -38,7 +38,7 @@ G = prufer(S)
 
 fig2, ax2 = plt.subplots()
 pos = nx.spring_layout(G)
-nx.draw(G, pos, node_color='cornflowerblue', node_size=120, with_labels=True, edge_color='cornflowerblue')
+nx.draw(G, pos, node_color='cornflowerblue', node_size=150, with_labels=True, edge_color='cornflowerblue')
 display(fig2,target="graf2")
 
 
