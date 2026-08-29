@@ -34,7 +34,7 @@ def prufer(A):
 
 @when("click", "#submit-btn")
 def generate_tree(event):
-    document.getElementById("graf2").innerHTML = ""
+    document.getElementById('graf2').innerHTML = ""
     n = int(document.getElementById('num').value)
     S = [np.random.randint(1,n+1) for i in range(n-2)]
     G = prufer(S)
