@@ -43,8 +43,7 @@ n=20
 S = [np.random.randint(1,n+1) for i in range(n-2)]
 G = prufer(S)
 
-fig2 = plt.figure()
-ax2 = plt.subplot()
+fig2, ax2 = plt.subplots()
 pos = nx.spring_layout(G)
 nx.draw(G, pos)
 display(fig2,target="graf2")
