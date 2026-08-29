@@ -34,7 +34,7 @@ def prufer(A):
 
 @when("click", "#submit-btn")
 def generate(event):
-    n = document.querySelector("num")
+    n = document.getElementById('num').value
     S = [np.random.randint(1,n+1) for i in range(n-2)]
     G = prufer(S)
 
