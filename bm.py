@@ -14,7 +14,7 @@ def simular(event):
         b.append(x)
     t = [i/n for i in range(n+1)]
     
-    fig, ax = plt.subplots(figsize=(10, 6))
+    fig, ax = plt.subplots(figsize=(10, 7))
     ax.plot(t,b , linewidth = 0.5, color= 'cornflowerblue')
     
     display(fig,target="bm")
