@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from pyscript import display
+from pyscript import display, when
 
 @when("click", "#gen")
 def simular(event):
