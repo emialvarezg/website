@@ -6,14 +6,7 @@ import networkx as nx
 #import pydot
 #from networkx.drawing.nx_pydot import graphviz_layout
 
-#display("prueba")
 
-#x=np.linspace(0,1,100)
-#y=x**2
-#fig, ax = plt.subplots()
-#ax.plot(x,y)
-
-#display(fig,target="graf")
 
 def prufer(A):
     #definimos el árbol
