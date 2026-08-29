@@ -1,12 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
+import pyscript
 #para cosas de gráficas
 #import networkx as nx
 #import pydot
 #from networkx.drawing.nx_pydot import graphviz_layout
 
-x=np.linspace(0,1,100)
-y=x**2
-plt.plot(x,y)
-plt.gcf()
+pyscript.display('prueba')
 
