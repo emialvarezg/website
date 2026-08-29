@@ -40,8 +40,8 @@ def generate_tree(event):
     S = [np.random.randint(1,n+1) for i in range(n-2)]
     G = prufer(S)
 
-    fig2, ax2 = plt.subplots(figsize=(8, 8))
-    pos = nx.kamada_kawai_layout(G)
+    fig2, ax2 = plt.subplots(figsize=(9, 9))
+    pos = nx.spring_layout(G)
     nx.draw(G, pos, node_color='forestgreen', node_size=150, with_labels=True, edge_color='saddlebrown')
     display(fig2,target="graf2")
 
