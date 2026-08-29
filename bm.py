@@ -4,6 +4,7 @@ from pyscript import display, when, document
 
 @when("click", "#gen")
 def simular(event):
+    plt.close()
     document.getElementById("bm").innerHTML = ""
     n=100000
     x=0
