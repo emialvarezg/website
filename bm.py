@@ -1,9 +1,10 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from pyscript import display, when
+from pyscript import display, when, document
 
 @when("click", "#gen")
 def simular(event):
+    document.getElementById("bm").innerHTML = ""
     n=100000
     x=0
     b = [x]
