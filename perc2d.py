@@ -22,6 +22,6 @@ def generate_perc(event):
     L=percolacion(n,p)
     pos = {node: node for node in L.nodes()}
 
-    fig, ax = plt.subplots(figsize=(8, 8))
+    fig, ax = plt.subplots(figsize=(9, 9))
     nx.draw(L,pos,node_size=0,edge_color='darkviolet')
     display(fig,target="perc")
