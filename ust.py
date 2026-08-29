@@ -39,7 +39,7 @@ def ust(G):
     return U
 #-----------------------------------------------------------------------------------------
 
-@when("click", "#submit")
+@when("click", "#sub")
 def generate_ust(event):
     plt.close()
     document.getElementById("ust").innerHTML = ""
