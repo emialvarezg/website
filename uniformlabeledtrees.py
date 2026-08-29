@@ -40,7 +40,7 @@ def generate_tree(event):
     G = prufer(S)
 
     fig2, ax2 = plt.subplots()
-    pos = nx.kamada_kawai_layout(G)
+    pos = nx.spring_layout(G)
     nx.draw(G, pos, node_color='forestgreen', node_size=150, with_labels=True, edge_color='saddlebrown')
     display(fig2,target="graf2")
 
