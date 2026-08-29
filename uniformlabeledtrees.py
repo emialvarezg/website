@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-from pyscript import display
+from pyscript import display, web, when, document
 #para cosas de gráficas
 import networkx as nx
 #import pydot
@@ -32,13 +32,15 @@ def prufer(A):
     T.add_edge(et[0],et[1])
     return T
 
-n=20
-S = [np.random.randint(1,n+1) for i in range(n-2)]
-G = prufer(S)
+@when("click", "#submit-btn")
+def generate(event):
+    n = document.querySelector("num")
+    S = [np.random.randint(1,n+1) for i in range(n-2)]
+    G = prufer(S)
 
-fig2, ax2 = plt.subplots()
-pos = nx.spring_layout(G)
-nx.draw(G, pos, node_color='cornflowerblue', node_size=150, with_labels=True, edge_color='cornflowerblue')
-display(fig2,target="graf2")
+    fig2, ax2 = plt.subplots()
+    pos = nx.spring_layout(G)
+    nx.draw(G, pos, node_color='cornflowerblue', node_size=150, with_labels=True, edge_color='cornflowerblue')
+    display(fig2,target="graf2")
 
 
