@@ -1,3 +1,3 @@
 {
-    "packages": ["numpy","matplotlib","networkx","random"]
+    "packages": ["numpy", "matplotlib", "networkx", "random"]
 }
