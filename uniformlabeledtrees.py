@@ -8,3 +8,8 @@ from pyscript import display
 
 display("prueba")
 
+x=np.linspace(0,1,100)
+y=x**2
+fig = plt.plot(x,y)
+
+display(fig)
