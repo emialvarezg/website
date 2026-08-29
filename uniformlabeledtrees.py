@@ -5,4 +5,8 @@ import matplotlib.pyplot as plt
 #import pydot
 #from networkx.drawing.nx_pydot import graphviz_layout
 
-print('prueba')
+x=np.linspace(0,1,100)
+y=x**2
+plt.plot(x,y)
+plt.gcf()
+
