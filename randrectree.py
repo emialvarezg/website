@@ -26,8 +26,8 @@ def generate_tree(event):
     R =  rectree(n)
 
     fig, ax = plt.subplots(figsize=(9, 9))
-    #pos = nx.spring_layout(R)
-    pos = graphviz_layout(R, prog="dot")
+    pos = nx.spring_layout(R)
+    #pos = graphviz_layout(R, prog="dot")
     nx.draw(R, pos, node_color='forestgreen', node_size=150, with_labels=True, edge_color='saddlebrown',font_color='white',font_size='8')
     display(fig,target="rrt")
   
