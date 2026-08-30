@@ -42,7 +42,7 @@ def generate_tree(event):
 
     fig2, ax2 = plt.subplots(figsize=(9, 9))
     pos = nx.kamada_kawai_layout(G)
-    nx.draw(G, pos, node_color='forestgreen', node_size=150, with_labels=True, edge_color='saddlebrown')
+    nx.draw(G, pos, node_color='forestgreen', node_size=150, with_labels=True, edge_color='saddlebrown',font_color='white',font_size='8')
     display(fig2,target="graf2")
 
 
