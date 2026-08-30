@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 from pyscript import display, web, when, document
 #para cosas de gráficas
 import networkx as nx
-import pydot
-from networkx.drawing.nx_pydot import graphviz_layout
+#import pydot
+#from networkx.drawing.nx_pydot import graphviz_layout
 
 #-------------------------------------------------------------------------------------------------------
 def rectree(n):
