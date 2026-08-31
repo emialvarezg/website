@@ -23,7 +23,7 @@ def generate_tree(event):
     plt.close()
     document.getElementById("rrt").innerHTML = ""
     n = int(document.getElementById("num").value)
-    R =  rectree(n)
+    R = rectree(n)
 
     fig, ax = plt.subplots(figsize=(9, 9))
     pos = nx.spring_layout(R)
