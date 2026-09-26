@@ -12,12 +12,14 @@
 <a href='index.html'><img src='back.gif'></a><br>
 Bond percolation on nxn lattice.<br>
 <input type="number" id="num"  placeholder="Choose n">
-<input type="number" id="prob" placeholder="Choose p">
+<input type="number" id="prob" placeholder="Choose p"><br>
+Color largest connected component:   
 <input list="val" id="col" >
 <datalist id="val">
   <option value="True">
   <option value="False">
 </datalist>
+<br>
 <button id="submit">Generate</button>
 <div id="perc"></div>
 <script type="py" src="perc2d.py" config="pyscript.json"></script>
