@@ -14,7 +14,7 @@ def percolacion(n,p):
 
 @when("click", "#submit")
 def generate_perc(event):
-    plt.close()
+    plt.close('all')
     document.getElementById("perc").innerHTML = ""
     n = int(document.getElementById("num").value)
     p = float(document.getElementById("prob").value)
