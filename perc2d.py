@@ -18,6 +18,7 @@ def generate_perc(event):
     document.getElementById("perc").innerHTML = ""
     n = int(document.getElementById("num").value)
     p = float(document.getElementById("prob").value)
+    color = True
 
     L=percolacion(n,p)
 
@@ -30,6 +31,7 @@ def generate_perc(event):
     pos2 = {node: node for node in C0.nodes()}
 
     fig, ax = plt.subplots(figsize=(9, 9))
-    nx.draw(L,pos,node_size=0,edge_color='darkviolet')
-    nx.draw(C0,pos2,node_size=0,edge_color='darkblue')
+    nx.draw(L,pos,node_size=0,edge_color='cornflowerblue')
+    if color == True:
+        nx.draw(C0,pos2,node_size=0,edge_color='darkorange')
     display(fig,target="perc")
