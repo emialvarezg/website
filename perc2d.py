@@ -18,7 +18,7 @@ def generate_perc(event):
     document.getElementById("perc").innerHTML = ""
     n = int(document.getElementById("num").value)
     p = float(document.getElementById("prob").value)
-    color = True
+    color = bool(document.getElementById("col").value)
 
     L=percolacion(n,p)
 
