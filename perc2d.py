@@ -20,8 +20,16 @@ def generate_perc(event):
     p = float(document.getElementById("prob").value)
 
     L=percolacion(n,p)
+
+    C = sorted(nx.connected_components(L), key=len, reverse=True)
+    C0 = L.subgraph(C[0]).copy()
+    
+    fig2, ax2 = plt.subplots(figsize=(10, 10))
+    
     pos = {node: node for node in L.nodes()}
+    pos2 = {node: node for node in C0.nodes()}
 
     fig, ax = plt.subplots(figsize=(9, 9))
     nx.draw(L,pos,node_size=0,edge_color='darkviolet')
+    nx.draw(C0,pos2,node_size=0,edge_color='darkblue')
     display(fig,target="perc")
